@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@400;500;700&display=swap');
+
+:root{
+    --fnt-header: "Playfair Display", serif;
+    --fnt-subheader: "Montserrat", sans-serif;
+    --clr-primary: #212529;
+    --clr-secondary: #F8F8F8;
+}
+
+#logo{
+    padding: 1.25rem;
+}
+#logo img{
+    width: 15%;
+}
+
+h1{
+    font-family: var(--fnt-header);
+    color: var(--clr-primary);
+    font-size: 2.5rem;
+}
+h2{
+    font-family: var(--fnt-header);
+    color: var(--clr-primary);
+    font-size: 45px;
+    font-weight: 700 !important;
+}
+h4{
+    font-family: var(--fnt-subheader);
+    color: var(--clr-primary);
+    font-weight: 700;
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+p{
+    font-family: var(--fnt-subheader);
+    color: var(--clr-primary);
+    font-size: 18px;
+    font-weight: 300;
+}
+button.btn{
+    background: var(--clr-primary);
+    font-family: var(--fnt-subheader);
+    font-weight: 400;
+    padding: 20px 50px;
+    border-radius: 0;
+    color: #fff;
+}
+button.btn:hover{
+    border: 1px solid var(--clr-primary);
+}
+
+#banner,
+#banner .container,
+#banner .row{
+    min-height: 80vh;
+}
+#banner{
+    padding: 40px 0;
+}
+ul{
+    margin: 30px 0 30px 20px;
+    list-style: none;
+}
+ul li p::before{
+    content: url(./images/dot.png);
+    position: absolute;
+    margin-left: -50px;
+}
+
+#logo-section{
+    padding: 80px 0;
+    text-align: center;
+    background: #fff;
+}
+#logo-section .logo-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#logo-section .logo-div:not(:last-child){
+    margin: 40px 0;
+}
+#testimonials{
+    background: var(--clr-secondary);
+    padding: 80px 0;
+    text-align: center;
+}
+#testimonials .row:not(:last-child){
+    margin-bottom: 80px;
+}
+#testimonials .row .col-lg-6{
+    text-align: left;
+}
+#testimonials ul{
+    margin: 40px 0 0 0;
+}
+#testimonials h4{
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+#testimonials h4.bullet-header{
+    font-weight: 400;
+}
+#testimonials .content-area{
+    padding: 0 40px;
+}
+#testimonials img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+#testimonials .card{
+    text-align: left;
+    padding: 30px 20px;
+}
+#testimonials .card p{
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    font-style: italic;
+    margin: 30px 0;
+}
+#testimonials p.author{
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+}
+#features{
+    padding: 60px 0;
+}
+#features h2{
+    margin-bottom: 40px;
+}
+#features .card{
+    border: 0;
+}
+#features img{
+    width: 15%;
+    margin: 0 auto;
+}
+#features .benefits-card{
+    margin: 60px 0 0;
+}
+#features h4{
+    font-family: var(--fnt-header);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+#features .card p{
+    font-size: 16px;
+}
+
+#process{
+    padding: 60px 0;
+}
+#process h2{
+    margin-bottom: 40px;
+}
+#process .headline-content{
+    margin-bottom: 80px;
+}
+#process h3{
+    font-family: var(--fnt-header);
+    color: var(--clr-primary);
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+#process .accordion .accordion-item h4.accordion-header,
+#process .accordion-item .accordion-button{
+    font-family: var(--fnt-header);
+    font-size: 20px;
+    color: var(--clr-primary);
+    font-weight: 700;
+}
+#process .accordion-button:not(.collapsed){
+    background: #e5d4d3;
+}
+#process .accordion-body p{
+    font-size: 16px;
+}
+#process .step-accordion{
+    margin-bottom: 60px;
+}
+#contact-us{
+    padding: 60px 0;
+    background: var(--clr-secondary);
+}
+#contact-us form{
+    margin-top: 60px;
+    padding: 40px;
+    border: 1px solid var(--clr-primary);
+}
+#contact-us form .row{
+    margin-bottom: 30px;
+}
+#contact-us form label{
+    font-family: var(--fnt-subheader);
+    color: var(--clr-primary);
+    font-weight: 500;
+    font-size: 20px;
+}
+#contact-us form p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+#contact-us form input,
+#contact-us form textarea,
+#contact-us form select{
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid var(--clr-primary);
+    padding: 10px;
+    font-family: var(--fnt-subheader);
+    margin-top: 10px;
+    font-size: 16px;
+    background: transparent;
+}
+#contact-us form select{
+    border: 1px solid var(--clr-primary);
+}
+#contact-us form input:focus,
+#contact-us form textarea:focus{
+    border: 2px solid var(--clr-primary);
+}
+#contact-us form .inner-form label{
+    font-size: 16px;
+}
+@media only screen and (max-width: 600px){
+    #banner img{
+        width: 100%;
+    }
+}
